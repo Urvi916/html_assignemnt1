@@ -1,0 +1,109 @@
+       <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      
+    }
+
+    .container {
+      width: 400px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 50px;
+      border-radius: 8px;
+      
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2 style="color:lightpink;">Student Registration Form</h2>
+    <form action="#" method="post">
+      <label for="fullname">First Name:</label>
+      <input type="text" id="fullname" name="first name" required>
+
+       <label for="fullname">Last Name:</label>
+      <input type="text" id="fullname" name="last name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="number">Mobile No:</label>
+      <input type="number" id="number" name="Mobile No" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">-- Select Gender --</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="course">Course:</label>
+      <input type="text" id="course" name="course" required>
+
+      <label for="Address">Address:</label>
+      <input type="text" id="Address" name="Address" required>
+
+      <label for="city">City:</label>
+      <input type="text" id="city" name="City" required>
+
+      <label for="Area Pin">Area Pin:</label>
+      <input type="text" id="Area Pin" name="Area Pin" required>
+
+      <label for="State">State:</label>
+      <input type="text" id="State" name="State" required>
+
+      <label for="password">password:</label>
+      <input type="number" id="number" name="password" required>
+
+      <input type="submit" value="submit">
+    </form>
+  </div>
+
+</body>
+</html>
