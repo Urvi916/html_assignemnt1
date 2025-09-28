@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Meesho Header</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color:black;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color:red;
+    }
+
+    .search-bar input {
+      padding: 8px 12px;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color:white;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color:red;
+    }
+     .main-content {
+      padding: 40px;
+    }
+
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    .product-card {
+      background-color: white;
+      border: 1px solid white;
+      border-radius: 8px;
+      width: 23%;
+      height: auto;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-10px);
+    }
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .product-card h4 {
+      margin: 10px 0 5px;
+      font-size: 16px;
+      color: gray;
+    }
+    .product-card p {
+      color: grey;
+      font-size: 14px;
+    }
+
+    .price {
+      color: red;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+
+     footer {
+      background-color:white;
+      padding: 40px 60px;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+     .footer-column {
+      flex: 1;
+      min-width: 200px;
+      margin: 20px 0;
+    }
+
+    .footer-column h3 {
+      margin-bottom: 15px;
+      color: red;
+      font-size: 18px;
+    }
+     .footer-column ul {
+      list-style: none;
+    }
+
+    .footer-column ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-column ul li a {
+      text-decoration: none;
+      color:grey;
+      font-size: 14px;
+    }
+    .footer-column ul li a:hover {
+      color: red;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 30px;
+      color:grey;
+      font-size: 14px;
+    }
+    
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">meesho</div>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Search for products">
+    </div>
+
+    <div class="nav-links">
+      <a href="">Download App</a>
+      <a href="">Become a Supplier</a>
+      <a href="">Cart</a>
+      <a href="">Profile</a>
+    </div>
+  </header>
+   <div class="main-content">
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="https://i.etsystatic.com/38411291/r/il/15e0c7/4721352855/il_570xN.4721352855_ekmw.jpg " alt="Product">
+        <h4>Kurti for Women</h4>
+        <p>High quality cotton material</p>
+        <div class="price">₹399</div>
+      </div>
+      <div class="product-card">
+        <img src="https://triprindia.com/cdn/shop/files/3.1_e5dffbdb-a071-4248-a973-fd919300796e.jpg?v=1741872316" alt="Product">
+        <h4>Men's T-shirt</h4>
+        <p>Comfortable & stylish</p>
+        <div class="price">₹299</div>
+      </div>
+   <div class="product-card">
+        <img src="https://i.pinimg.com/564x/b8/72/1a/b8721a4622b28524e3753e78880714aa.jpg" alt="Product">
+        <h4>Kids Wear</h4>
+        <p>Trendy clothing for kids</p>
+        <div class="price">₹199</div>
+      </div>
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/71xjVA9kC2L._UF1000,1000_QL80_.jpg" alt="Product">
+        <h4>Makeup Kit</h4>
+        <p>Complete beauty set</p>
+        <div class="price">₹499</div>
+      </div>
+
+    </div>
+  </div>
+  <div class="footer-container">
+
+      <div class="footer-column">
+        <h3>Shop</h3>
+        <ul>
+          <li><a href="">Women Ethnic</a></li>
+          <li><a href="">Women Western</a></li>
+          <li><a href="">Men</a></li>
+          <li><a href="">Kids</a></li>
+        </ul>
+      </div>
+       <div class="footer-column">
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">Returns</a></li>
+          <li><a href="">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="">Facebook</a></li>
+          <li><a href="">Instagram</a></li>
+          <li><a href="">YouTube</a></li>
+          <li><a href="">Twitter</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 Meesho. All rights reserved.
+    </div>
+  </footer>
+
+
+</body>
+</html>

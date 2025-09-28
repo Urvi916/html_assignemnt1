@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Themed Page with CSS Variables</title>
+    <style>
+        /* Define CSS variables in :root */
+        :root {
+            --primary-color: #4a90e2;        /* Blue */
+            --secondary-color: #f39c12;      /* Orange */
+            --text-color: #333333;  
+            --background-color: #f9f9f9;
+            
+             --border-color: #dcdcdc; 
+
+            --font-family: Arial, sans-serif;
+            --bg-color: #f9f9f9;
+            --text-color: #333;
+
+            /* Theme colors */
+            --link-color: #1a73e8;
+            --visited-color: #6a1b9a;
+            --hover-color: #d32f2f;
+            --active-color: #388e3c;
+
+            --first-line-color: #2e7d32;
+            --heading-icon-color: gold;
+        }
+
+        body {
+            font-family: var(--font-family);
+            padding: 20px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+         header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1 {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        h1::before {
+            content: "★";
+            color: var(--heading-icon-color);
+            font-size: 1.2em;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        p::first-line {
+            font-weight: bold;
+            color: var(--first-line-color);
+            font-size: 1.1em;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        /* Link states using CSS variables */
+        a:link {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: var(--visited-color);
+        }
+
+        a:hover {
+            color: var(--hover-color);
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: var(--active-color);
+        }
+
+        footer {
+            background-color: var(--footer-color);
+            color: var(--footer-text-color);
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Styled Paragraph & Themed Links</h1>
+     <header>
+        <h1>Welcome to My Website</h1>
+        <p>Simple web page layout example</p>
+    </header>
+    <p>
+        This paragraph demonstrates the use of ::first-line and CSS variables. 
+        CSS variables help maintain a consistent theme and make it easy to change colors or fonts site-wide.
+    </p>
+ 
+     <main>
+        <h2>Main Content</h2>
+        <p>This is the main content area of the page. You can add text, images, or other HTML elements here. This section is typically where your core information goes.</p>
+    </main>
+    <ul>
+        <li><a href="https://www.google.com" target="_blank">Google</a></li>
+        <li><a href="https://www.wikipedia.org" target="_blank">Wikipedia</a></li>
+        <li><a href="https://www.github.com" target="_blank">GitHub</a></li>
+        <li><a href="https://www.stackoverflow.com" target="_blank">Stack Overflow</a></li>
+        <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+    </ul>
+
+     <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
